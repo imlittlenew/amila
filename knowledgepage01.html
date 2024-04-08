@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="img/logo.png" rel="shortcut icon" />
+  <title>AMILA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mycss.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <button onclick="scrollToTop()" id="backToTopBtn" title="回到頂部"></button>
+<!-- 優惠訊息 -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary p-2" data-bs-theme="dark">
+  <div class="container text-center">
+    <div class="row mx-auto">
+      <div class="col-12 ">
+        <span class="navbar-brand mb-0 fs-6 text-light"><b>歡慶阿米拉品牌月！全館 $599
+            享免運！</b></span>
+
+      </div>
+    </div>
+    <!-- Content here -->
+  </div>
+</nav>
+<!-- 導覽列 -->
+<nav class="navbar navbar-expand-lg navbar sticky-top shadow mt-0 mb-0  bg-body" style="background-color: white;">
+  <div class="container">
+    <a class="navbar-brand fs-5 fw-bold mt-1" href="index.html">
+      <img src="img/logo.png" alt="Logo" width="45" height="36" class="d-inline-block align-text-center ">AMILA</a>
+    <button class="navbar-toggler" style="padding: 0 10px 0 10px;" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link fw-bold fs-5" href="all_products.html">所有商品</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active fw-bold fs-5" href="knowledgepage01.html">毛孩保健知識</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold fs-5" aria-current="page" href="aboutamila.html">關於阿米拉</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-bold fs-5" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            常見問題
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item  fs-5" href="pq.html">商品問題</a></li>
+            <li><a class="dropdown-item  fs-5" href="returns.html">退換貨須知</a></li>
+            <li><a class="dropdown-item  fs-5" href="delivery.html">運送政策</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <a href="#" class="btn text-nowrap" onclick="toggleSearch()">
+            <img src="img/search.png" class="d-block img-fluid" alt="search">
+        </a>
+        <div class="search-overlay" id="searchOverlay"onclick="searchProducts()">
+            <div class="search-form search-form--full-screen" id="searchForm">
+                <div class="search-container">
+                    <img src="img/bigsearch.png" class="search-icon" alt="search">
+                    <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+                </div>
+            </div>
+        </div>
+        
+        <a href="cart.html" class="btn text-nowrap" id="cartIconWrapper">
+            <img src="img/cart.png" class="d-block img-fluid" alt="cart">
+            <span class="badge bg-dark rounded-pill cart-badge-nav" id="cartBadge"></span>
+        </a>
+        <a href="user.html" class="btn text-nowrap"><img src="img/user.png" class="d-block img-fluid" alt="user"></a>
+    </form>
+      
+    </div>
+</nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html" class="link-dark">首頁</a></li>
+            <li class="breadcrumb-item active" aria-current="page">毛孩保健知識</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- 知識01 -->
+    <div class="row row-cols-1 row-cols-md-2 mb-5 ">
+      <div class="col-md-6 mt-5 mb-5"  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+        <h1 class="mb-5"><b>專為全天下毛小孩的爸媽發表知識文章</b></h1>
+        <img src="img/magazine01.png" class="card-img-top" alt="...">
+      </div>
+      <div class="col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1500">
+        <img src="img/magazine02.png" class="card-img-top" alt="...">
+        <h1 class="mb-5 mt-5"><b>除了販售保健食品外，另附設幫助毛孩拍攝照片，以及接合作廠商。
+          </b></h1>
+        <h5 class="line-height">
+          前陣子跟PEDRO的合作拍攝，我們邀請了 ACT for Animals 社團法人台灣愛克特動物重生救援協會社團法人台灣愛克特動物重生救援協會 的狗狗們一起參與。
+          這次的狗狗跟以往不同，除了都是還在等家的孩子外，其中還有因為誤觸捕獸夾而失去一條腿或是因此腳掌變形的孩子
+          很開心能有國際品牌願意與我們一同為了這些相對弱勢的孩子們發聲。其實這些受過傷的孩子，只要好好照顧，
+          他們和一般的狗狗基本上沒有什麼差別，一樣愛笑、愛玩、愛吃，可能白目也是差不多等級，如果對這些還在等家的孩子們有興趣的朋友，
+          也歡迎聯繫 ACT 認識相處看看喔！
+        </h5>
+      </div>
+    </div>
+
+    <!-- 知識02 -->
+
+    <div class="row row-cols-1 row-cols-md-2 mt-5">
+      <div class="col-md-12"data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000"><img src="img/ktitle01.png" class="card-img-top img-fluid ktitle mb-5" alt="..."></div>
+      <div class="col-md-6" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+        <img src="img/kbigimg01.png" class="card-img-top" alt="...">
+      </div>
+
+      <div class="col-md-6"data-aos="fade-up" data-aos-duration="1500">
+        <!-- 知識02右側欄-1 -->
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <img src="img/ksmall01.png" class="card-img-top" alt="...">
+          </div>
+          <div class="col-md-6">
+            <h3><b>商業攝影詢問</b></h3>
+            <div class="d-flex align-items-center">
+              <img src="img/articleicon.png" alt="專題文章圖示">
+              <h5 class="mb-0 ms-2">專題文章</h5>
+            </div>
+          </div>
+        </div>
+        <!-- 知識02右側欄-2 -->
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <img src="img/ksmall02.png" class="card-img-top" alt="...">
+          </div>
+          <div class="col-md-6">
+            <h3><b>寵物攝影限量預約</b></h3>
+            <div class="d-flex align-items-center">
+              <img src="img/articleicon.png" alt="專題文章圖示">
+              <h5 class="mb-0 ms-2">專題文章</h5>
+            </div>
+          </div>
+        </div>
+        <!-- 知識02右側欄-3 -->
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <img src="img/ksmall03.png" class="card-img-top" alt="...">
+          </div>
+          <div class="col-md-6">
+            <h3><b>更多待領養的孩子</b></h3>
+            <div class="d-flex align-items-center">
+              <img src="img/articleicon.png" alt="專題文章圖示">
+              <h5 class="mb-0 ms-2">專題文章</h5>
+            </div>
+          </div>
+        </div>
+        <!-- 知識02右側欄-4 -->
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <img src="img/ksmall04.png" class="card-img-top" alt="...">
+          </div>
+          <div class="col-md-6">
+            <h3><b>更多毛孩精選保健商品</b></h3>
+            <div class="d-flex align-items-center">
+              <img src="img/articleicon.png" alt="專題文章圖示">
+              <h5 class="mb-0 ms-2">專題文章</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- 知識03 -->
+
+      <div class="row row-cols-1 row-cols-md-2 mt-5">
+        <div class="col-md-12"data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000"><img src="img/ktitle02.png" class="card-img-top ktitle img-fluid mb-5" alt="..."></div>
+
+        <div class="col-md-6"data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+          <!-- 知識03左側欄-1 -->
+          <div class="row mb-5">
+            <div class="col-md-6">
+              <img src="img/ksmall05.png" class="card-img-top" alt="...">
+            </div>
+            <div class="col-md-6">
+              <h3><b>狗狗磨牙的重要性：口腔健康和幸福</b></h3>
+              <div class="d-flex align-items-center">
+                <img src="img/articleicon.png" alt="專題文章圖示">
+                <h5 class="mb-0 ms-2">專題文章</h5>
+              </div>
+            </div>
+          </div>
+          <!-- 知識03左側欄-2 -->
+          <div class="row mb-5">
+            <div class="col-md-6">
+              <img src="img/ksmall06.png" class="card-img-top" alt="...">
+            </div>
+            <div class="col-md-6">
+              <h3><b>為什麼狗狗會有體味？如何消除狗狗身上的難聞氣味</b></h3>
+              <div class="d-flex align-items-center">
+                <img src="img/articleicon.png" alt="專題文章圖示">
+                <h5 class="mb-0 ms-2">專題文章</h5>
+              </div>
+            </div>
+          </div>
+          <!-- 知識03左側欄-3 -->
+          <div class="row mb-5">
+            <div class="col-md-6">
+              <img src="img/ksmall07.png" class="card-img-top" alt="...">
+            </div>
+            <div class="col-md-6">
+              <h3><b>狗狗心靈對話的藝術： 發現他們的情感表達方式</b></h3>
+              <div class="d-flex align-items-center">
+                <img src="img/articleicon.png" alt="專題文章圖示">
+                <h5 class="mb-0 ms-2">專題文章</h5>
+              </div>
+            </div>
+          </div>
+          <!-- 知識03左側欄-4 -->
+          <div class="row mb-5">
+            <div class="col-md-6">
+              <img src="img/ksmall08.png" class="card-img-top" alt="...">
+            </div>
+            <div class="col-md-6">
+              <h3><b>狗狗皮膚保健指南-病症與照護</b></h3>
+              <div class="d-flex align-items-center">
+                <img src="img/articleicon.png" alt="專題文章圖示">
+                <h5 class="mb-0 ms-2">專題文章</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 知識03右側欄 -->
+        <div class="col-md-6"data-aos="fade-up" data-aos-duration="1500">
+          <img src="img/kbigimg02.png" class="card-img-top" alt="...">
+        </div>
+
+      </div>
+
+
+
+
+
+      <!-- 毛孩保健知識01 -->
+      <div class="row"data-aos="fade-up">
+        <h1 class="mt-5 mb-5"><b>專為全天下毛小孩的爸媽發表知識文章</b></h1>
+        <hr>
+        <div class="col-md-6 col-lg-4 mb-3 mt-2">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge01.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【狗狗健康】狗狗換飼料後怎麼拉肚子了？循序漸進才健康！</h5>
+              <p class="card-title" style="color: gray;">2021-07-26</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge02.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【狗狗健康】狗狗老了怎麼照顧？４個方法讓狗狗安心養老！</h5>
+              <p class="card-title" style="color: gray;">2021-02-17</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge03.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【狗狗口腔】狗狗刷牙怎麼刷？5步驟教你幫狗狗正確刷牙 </h5>
+              <p class="card-title" style="color: gray;">2020-10-05</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 毛孩保健知識02 -->
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge04.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【狗狗健康】尿尿顏色有玄機？我家的毛孩健康嗎？</h5>
+              <p class="card-title" style="color: gray;">2020-07-15</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge05.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【口腔潔淨魔法學】你家毛孩牙齒健康嗎？馬上測看看！ </h5>
+              <p class="card-title" style="color: gray;">2020-06-19</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge06.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【貓狗餵養知識】飼主必看！毛孩吃保健食品的4大守則！</h5>
+              <p class="card-title" style="color: gray;">2020-06-10</p>
+            </div>
+          </div>
+        </div>
+        <!-- 毛孩保健知識03 -->
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge07.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【貓狗健康】按摩肉球好處多多～不可不知！藏在毛孩肉球的3個穴位！</h5>
+              <p class="card-title" style="color: gray;">2020-07-15</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge08.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【狗狗健康】該出門散步囉！狗狗運動不足的4大徵兆！ </h5>
+              <p class="card-title" style="color: gray;">2020-06-19</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge09.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【貓狗牙周病】毛孩口臭、牙齦流血請注意！4種牙周病好發族群這樣預防 </h5>
+              <p class="card-title" style="color: gray;">2020-06-10</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div><!--第一筆知識結束-->
+
+      <!-- 第二筆知識開始 -->
+      <!-- 毛孩保健知識01 -->
+      <div class="row justify-content-center secondKnowledgeSection" id="secondKnowledgeSection"data-aos="fade-up">
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+          <div class="col-md-12 col-lg-4 mb-3">
+            <div class="card border-0 p-2 mb-1  bg-body rounded">
+              <img src="img/knowledge10.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">【貓狗健康】按摩肉球好處多多～不可不知！藏在毛孩肉球的3個穴位！</h5>
+                <p class="card-title" style="color: gray;">2020-05-08</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card border-0 p-2 mb-1  bg-body rounded">
+              <img src="img/knowledge11.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">【狗狗健康】該出門散步囉！狗狗運動不足的4大徵兆！</h5>
+                <p class="card-title" style="color: gray;">2020-04-24</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card border-0 p-2 mb-1  bg-body rounded">
+              <img src="img/knowledge12.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">【狗狗健康】狗狗容易便秘、拉肚子？教你3大腸胃保健妙招！ </h5>
+                <p class="card-title" style="color: gray;"> 2020-04-22</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 毛孩保健知識02 -->
+        <div class="col-4">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge13.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【狗貓健康】貓狗結紮最適合的年紀是幾歲？公母大不同！</h5>
+              <p class="card-title" style="color: gray;"> 2020-04-17</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge14.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【狗貓健康】毛孩常見眼疾「角膜潰瘍」的5種症狀！一不注意恐失明？ </h5>
+              <p class="card-title" style="color: gray;">2020-04-08</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge15.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【狗狗小學堂】狗狗為什麼一直喘氣？４大原因一次告訴你！</h5>
+              <p class="card-title" style="color: gray;">2019-07-17</p>
+            </div>
+          </div>
+        </div>
+        <!-- 毛孩保健知識03 -->
+        <div class="col-4">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge16.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【狗狗健康】狗狗一天該尿幾次？別讓憋尿傷身體！</h5>
+              <p class="card-title" style="color: gray;"> 2019-03-22</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge17.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【毛孩保健術】毛孩關節保養大作戰！不滑不跳不痛痛！ </h5>
+              <p class="card-title" style="color: gray;">2019-01-24</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge18.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【狗貓生活家】天涼好個秋～狗狗的秋冬保養守則！</h5>
+              <p class="card-title" style="color: gray;">2018-12-05</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 第二筆知識結束 -->
+
+
+      <!-- 第三筆知識開始 -->
+      <!-- 毛孩保健知識01 -->
+      <div class="row justify-content-center thirdKnowledgeSection" id="thirdKnowledgeSection"data-aos="fade-up">
+        <div class="row row-cols-1 row-cols-md-3 g-3 ">
+          <div class="col-4">
+            <div class="card border-0 p-2 mb-1  bg-body rounded">
+              <img src="img/knowledge19.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">【狗狗保健】狗狗換牙期的4大照顧重點，你都知道了嗎？</h5>
+                <p class="card-title" style="color: gray;">2018-11-07</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card border-0 p-2 mb-1  bg-body rounded">
+              <img src="img/knowledge20.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">【狗貓健康】疾病徵兆摸得出來？那些透過摸摸可以做的居家檢查！ </h5>
+                <p class="card-title" style="color: gray;">2018-09-07</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card border-0 p-2 mb-1  bg-body rounded">
+              <img src="img/knowledge21.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">【狗貓疾病飲食】心臟疾病OUT!六款食物保護狗狗心臟 </h5>
+                <p class="card-title" style="color: gray;"> 2018-08-17</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 毛孩保健知識02 -->
+        <div class="col-4">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge22.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【狗狗小學堂】東咬西咬～毛孩要換牙啦！你準備好了嗎？</h5>
+              <p class="card-title" style="color: gray;"> 2018-07-20</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge23.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【狗貓小學堂】主子舔毛舔過頭，送你３個預防毛球症大法寶！</h5>
+              <p class="card-title" style="color: gray;"> 2018-07-19</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge24.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【狗狗健康】關節保養要趁早！這四種狗狗要注意！</h5>
+              <p class="card-title" style="color: gray;"> 2018-06-29</p>
+            </div>
+          </div>
+        </div>
+        <!-- 毛孩保健知識03 -->
+        <div class="col-4">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge25.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【狗貓健康】關節退化不可逆，及時保養不痛痛！</h5>
+              <p class="card-title" style="color: gray;"> 2018-06-08</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge26.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【狗貓健康】對抗自由基傷害，毛孩的眼睛靠他們來保護！</h5>
+              <p class="card-title" style="color: gray;">2018-05-29</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border-0 p-2 mb-1  bg-body rounded">
+            <img src="img/knowledge27.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">【狗貓健康】關節卡卡不是缺鈣？！毛孩的靈活要補對！ </h5>
+              <p class="card-title" style="color: gray;">2018-05-29</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+  <div class="text-center mt-4">
+    <button class="btn btn-dark btn-lg rounded-pill custom-btn" id="showMoreBtn">展示更多</button>
+  </div>
+
+
+
+
+
+
+
+  <!-- 我的頁尾開始 -->
+  <div class="b-example-divider"></div>
+  <div class="mt-5 p-4 text-white text-center " style="background-image: url('img/footer.png');" data-bs-theme="dark">
+
+    <div class="container  mt-5">
+      <footer class="py-5 mt-5">
+        <div class="row  mt-5 ">
+
+          <div class="col-6  mb-3">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 text-start">
+                <h5><b>聯絡我們</b></h5>
+              </li>
+              <br>
+              <li class="nav-item mb-2 text-start">
+                <h6>營業時間｜周一至周五 09：00-16：30</h6>
+              </li>
+              <li class="nav-item mb-2 text-start">
+                <h6>地址｜臺中市南屯區公益路二段51號(國泰公益大樓)</h6>
+              </li>
+              <li class="nav-item mb-2 text-start">
+                <h6>客服信箱｜amila@gmail.com</h6>
+              </li>
+              <li class="nav-item mb-2 text-start">
+                <h6>客服電話｜(04)2242-1717 #263</h6>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="col-md-6 ">
+            <form>
+              <div class="text-start">
+                <h5><b>訂閱電子報</b></h5>
+              </div>
+              <div class="input-group mb-3">
+                <label for="newsletter1" class="visually-hidden">訂閱電子報信箱</label>
+                <input type="text" class="form-control rounded-start" placeholder="訂閱電子報信箱"
+                  aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-light " type="button" id="button-addon2">訂閱</button>
+              </div>
+              <div>
+                <ul class="list-unstyled d-flex">
+                  <li class="ms-0"><img src="img/JCB.png" class="img-fluid img-thumbnail" alt="..."></a></li>
+                  <li class="ms-0"><img src="img/VISA.png" class="img-fluid img-thumbnail" alt="..."></a></li>
+                  <li class="ms-0"><img src="img/MasterCard.png" class="img-fluid img-thumbnail" alt="..."></a></li>
+                </ul>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2023 阿米拉工作室股份有限公司</p>
+        </div>
+      </footer>
+    </div>
+    <!-- 我的頁尾結束 -->
+    <script src="js/aos.js"></script>
+    <script src="js/myjs.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

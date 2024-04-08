@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="img/logo.png" rel="shortcut icon" />
+  <title>AMILA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mycss.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <button onclick="scrollToTop()" id="backToTopBtn" title="回到頂部"></button>
+<!-- 優惠訊息 -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary p-2" data-bs-theme="dark">
+  <div class="container text-center">
+    <div class="row mx-auto">
+      <div class="col-12 ">
+        <span class="navbar-brand mb-0 fs-6 text-light"><b>歡慶阿米拉品牌月！全館 $599
+            享免運！</b></span>
+
+      </div>
+    </div>
+    <!-- Content here -->
+  </div>
+</nav>
+<!-- 導覽列 -->
+<nav class="navbar navbar-expand-lg navbar sticky-top shadow mt-0 mb-0  bg-body" style="background-color: white;">
+  <div class="container">
+    <a class="navbar-brand fs-5 fw-bold mt-1" href="index.html">
+      <img src="img/logo.png" alt="Logo" width="45" height="36" class="d-inline-block align-text-center ">AMILA</a>
+    <button class="navbar-toggler" style="padding: 0 10px 0 10px;" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link  fw-bold fs-5" href="all_products.html">所有商品</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold fs-5" href="knowledgepage01.html">毛孩保健知識</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active fw-bold fs-5" aria-current="page" href="aboutamila.html">關於阿米拉</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-bold fs-5" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            常見問題
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item  fs-5" href="pq.html">商品問題</a></li>
+            <li><a class="dropdown-item  fs-5" href="returns.html">退換貨須知</a></li>
+            <li><a class="dropdown-item  fs-5" href="delivery.html">運送政策</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <a href="#" class="btn text-nowrap" onclick="toggleSearch()">
+            <img src="img/search.png" class="d-block img-fluid" alt="search">
+        </a>
+        <div class="search-overlay" id="searchOverlay"onclick="searchProducts()">
+            <div class="search-form search-form--full-screen" id="searchForm">
+                <div class="search-container">
+                    <img src="img/bigsearch.png" class="search-icon" alt="search">
+                    <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+                </div>
+            </div>
+        </div>
+        
+        <a href="cart.html" class="btn text-nowrap" id="cartIconWrapper">
+            <img src="img/cart.png" class="d-block img-fluid" alt="cart">
+            <span class="badge bg-dark rounded-pill cart-badge-nav" id="cartBadge"></span>
+        </a>
+        <a href="user.html" class="btn text-nowrap"><img src="img/user.png" class="d-block img-fluid" alt="user"></a>
+    </form>
+      
+    </div>
+</nav>
+
+<div class="container">
+  <!-- 品牌口號img -->
+
+  <div class="row mt-5 mb-5">
+    <div class="col align-self-center ">
+      <div class="text-center t1" data-aos="fade-up"><b>讓毛孩活得開心</b></div>
+      <div class="text-center t1 mb-5" data-aos="fade-up"><b>吃得健康</b></div>
+      <img src="img/abouttitle.png" class="img-fluid d-block rounded-3 w-100 " data-aos="fade-up"alt="title04" >
+    </div>
+  </div>
+
+  <div class="row">
+
+      <div class="card mb-3 mt-5 border-0" data-aos="fade-up"data-aos-anchor-placement="top-center">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-6 ">
+            <div class="card-body">
+              <h1 class="card-title mb-5"><b>品牌理念 Story</b></h1>
+              <h4 class="card-text ">我們相信「健康的寵物食品不是奢侈品，要能讓每隻毛小孩長期享用」，致力於「打造頂級、營養又平易近人的濕食」，所有食品皆由專業獸醫師、營養配方師精心調配把關，希望「讓毛孩吃得更好，陪我們一起慢慢變老。」</h4>
+            </div>
+          </div>
+            <div class="col-md-1">
+            </div>
+          
+          <div class="col-md-5">
+            <img src="img/about01.png" class="img-fluid rounded-3 W-100" alt="..."  >
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 mt-5 border-0" data-aos="fade-up"data-aos-anchor-placement="top-center">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-5">
+            <img src="img/about02.png" class="img-fluid rounded-3 W-100 " alt="...">
+          </div>
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h1 class="card-title mb-5"><b>產品承諾 Principle</b></h1>
+              <h4 class="card-text">【營養均衡】<br>
+                ✔ 由專業獸醫師、營養配方師監製<br>
+                ✔ 全系列主食符合美國 NRC/AAFCO 犬貓營養標準<br>
+                
+                【安全第一】<br>
+                ✔ 嚴選履歷食材製作，科學檢驗無藥物殘留<br>
+                ✔ 生食餐採用超高壓滅菌技術，符合國家最嚴格生食標準<br>
+                ✔ 投保 3000 萬元產品責任險，毛拔麻更安心/更有保障<br>
+                
+                【公開透明】<br>
+                ✔ 公開營養成分、產品履歷<br>
+                ✔ 公開進貨證明、檢驗報告</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 mt-5 border-0" data-aos="fade-up"data-aos-anchor-placement="top-center">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-6 ">
+            <div class="card-body ">
+              <h1 class="card-title mb-5"><b>加入我們 Join us</b></h1>
+              <h4 class="card-text">「讓毛孩吃得更好，陪我們一起慢慢變老。」<br>汪喵正在加速成長，如果你也喜歡挑戰新的事物，同時具有不斷自我成長的能力，來吧！歡迎與汪喵一起努力！</h4>
+            </div>
+          </div>
+            <div class="col-md-1">
+            </div>
+          <div class="col-md-5">
+            <img src="img/about03.png" class="img-fluid rounded-3 W-100 " alt="...">
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+</div><!--container End-->
+
+  <!-- 我的頁尾開始 -->
+  <div class="b-example-divider"></div>
+  <div class="mt-5 p-4 text-white text-center " style="background-image: url('img/footer.png');" data-bs-theme="dark">
+
+    <div class="container  mt-5">
+      <footer class="py-5 mt-5">
+        <div class="row  mt-5 ">
+
+          <div class="col-6  mb-3">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 text-start">
+                <h5><b>聯絡我們</b></h5>
+              </li>
+              <br>
+              <li class="nav-item mb-2 text-start">
+                <h6>營業時間｜周一至周五 09：00-16：30</h6>
+              </li>
+              <li class="nav-item mb-2 text-start">
+                <h6>地址｜臺中市南屯區公益路二段51號(國泰公益大樓)</h6>
+              </li>
+              <li class="nav-item mb-2 text-start">
+                <h6>客服信箱｜amila@gmail.com</h6>
+              </li>
+              <li class="nav-item mb-2 text-start">
+                <h6>客服電話｜(04)2242-1717 #263</h6>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="col-md-6 ">
+            <form>
+              <div class="text-start">
+                <h5><b>訂閱電子報</b></h5>
+              </div>
+              <div class="input-group mb-3">
+                <label for="newsletter1" class="visually-hidden">訂閱電子報信箱</label>
+                <input type="text" class="form-control rounded-start" placeholder="訂閱電子報信箱"
+                  aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-light " type="button" id="button-addon2">訂閱</button>
+              </div>
+              <div>
+                <ul class="list-unstyled d-flex">
+                  <li class="ms-0"><img src="img/JCB.png" class="img-fluid img-thumbnail" alt="..."></a></li>
+                  <li class="ms-0"><img src="img/VISA.png" class="img-fluid img-thumbnail" alt="..."></a></li>
+                  <li class="ms-0"><img src="img/MasterCard.png" class="img-fluid img-thumbnail" alt="..."></a></li>
+                </ul>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2023 阿米拉工作室股份有限公司</p>
+        </div>
+      </footer>
+    </div>
+    <!-- 我的頁尾結束 -->
+    <script src="js/aos.js"></script>
+    <script src="js/myjs.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+
+</body>
+
+</html>

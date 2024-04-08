@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="img/logo.png" rel="shortcut icon" />
+  <title>AMILA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mycss.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <button onclick="scrollToTop()" id="backToTopBtn" title="回到頂部"></button>
+  <!-- 優惠訊息 -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-2" data-bs-theme="dark">
+    <div class="container text-center">
+      <div class="row mx-auto">
+        <div class="col-12 ">
+          <span class="navbar-brand mb-0 fs-6 text-light"><b>歡慶阿米拉品牌月！全館 $599
+              享免運！</b></span>
+
+        </div>
+      </div>
+      <!-- Content here -->
+    </div>
+  </nav>
+  <!-- 導覽列 -->
+  <nav class="navbar navbar-expand-lg navbar sticky-top shadow mt-0 mb-0  bg-body" style="background-color: white;">
+    <div class="container">
+      <a class="navbar-brand fs-5 fw-bold mt-1" href="index.html">
+        <img src="img/logo.png" alt="Logo" width="45" height="36" class="d-inline-block align-text-center ">AMILA</a>
+      <button class="navbar-toggler" style="padding: 0 10px 0 10px;" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link  fw-bold fs-5" href="all_products.html">所有商品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5" href="knowledgepage01.html">毛孩保健知識</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5" aria-current="page" href="aboutamila.html">關於阿米拉</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-bold fs-5" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              常見問題
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item  fs-5" href="pq.html">商品問題</a></li>
+              <li><a class="dropdown-item  fs-5" href="returns.html">退換貨須知</a></li>
+              <li><a class="dropdown-item  fs-5" href="delivery.html">運送政策</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <a href="#" class="btn text-nowrap" onclick="toggleSearch()">
+            <img src="img/search.png" class="d-block img-fluid" alt="search">
+          </a>
+          <div class="search-overlay" id="searchOverlay" onclick="searchProducts()">
+            <div class="search-form search-form--full-screen" id="searchForm">
+              <div class="search-container">
+                <img src="img/bigsearch.png" class="search-icon" alt="search">
+                <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+              </div>
+            </div>
+          </div>
+
+          <a href="cart.html" class="btn text-nowrap" id="cartIconWrapper">
+            <img src="img/cart.png" class="d-block img-fluid" alt="cart">
+            <span class="badge bg-dark rounded-pill cart-badge-nav" id="cartBadge"></span>
+          </a>
+          <a href="user.html" class="btn text-nowrap"><img src="img/user.png" class="d-block img-fluid" alt="user"></a>
+        </form>
+
+      </div>
+  </nav>
+  <!-- 圖片輪播 -->
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade mt-0 mb-5 " data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="img/header01.png" class="d-block img-fluid w-100" alt="dog01">
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="img/header02.png" class="d-block img-fluid w-100" alt="dog02">
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="img/header03.png" class="d-block img-fluid w-100" alt="dog03">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- ad三張圖片 -->
+  <div class="container">
+    <!-- .gx-* 類別可以用來控制水平 gutter 的寬度 -->
+
+    <div class="row" data-aos="fade-up">
+
+
+      <div class="col" id="ad">
+        <img src="img/advertise01.png" class="img-fluid" />
+        <div><i class="bonesbuy"></i>
+          <h2>關節和情緒保健</h2>
+          <h4>查看更多</h4><a href="bonesbuy.html"></a>
+        </div>
+      </div>
+
+
+      <div class="col" id="ad">
+        <img src="img/advertise02.png" class="img-fluid" />
+        <div><i class="bodybuy"></i>
+          <h2>身體的相關保健</h2>
+          <h4>查看更多</h4><a href="bodybuy.html"></a>
+        </div>
+      </div>
+
+
+      <div class="col" id="ad">
+        <img src="img/advertise03.png" class="img-fluid " />
+        <div><i class="eyesbuy"></i>
+          <h2>眼睛和皮膚保健</h2>
+          <h4>查看更多</h4><a href="eyesbuy.html"></a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="alert cart-message " role="alert" id="cartMessage">
+      <img src="img/bigcart.png" class="d-block img-fluid mx-auto" alt="cart">
+      商品已成功加入購物車！
+    </div>
+    <!-- 新品搶先看img -->
+    <div class="row mt-5 mb-5" data-aos="fade-up">
+      <div class="col align-self-center ">
+        <img src="img/title01.png" class="img-fluid mx-auto d-block w-75" alt="title04">
+      </div>
+    </div>
+
+
+    <!-- 新品搶先看的加入購物車視窗選項01-04 -->
+    <!-- 01 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <img id="imgDog01" src="img/advertise01.png" class="img-fluid" />
+                </div>
+                <div class="col-md-6 ms-auto">
+                  <div class="row mt-2">
+                    <div class="col-12 fs-5 fw-bold " id="modalTitle">
+                    </div>
+                    <div class="col-12 mb-4 fs-5 fw-bold mt-3" id="modalPrice"></div>
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 mt-4">
+                    <div class="col-12 .fs-6 badge bg-secondary text-wrap ">
+                      全館滿$599免運</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="col">
+                      <label for="quantity" class="me-2 text-secondary fs-6">購買數量</label>
+                      <form class="d-flex align-items-center" id="purchaseForm">
+
+                        <div class="d-flex align-items-center">
+                          <button type="button" onclick="decreaseQuantity()"
+                            class="me-2 btn btn-outline-dark">-</button>
+                          <input id="quantity" name="quantity" min="1" value="1" class="form-control">
+                          <button type="button" onclick="increaseQuantity()"
+                            class="ms-2 btn btn-outline-dark">+</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" id="addToCartBtn" class="btn btn-dark">加入購物車</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <img id="imgDog01" src="img/advertise01.png" class="img-fluid" />
+                </div>
+                <div class="col-md-6 ms-auto">
+                  <div class="row mt-2">
+                    <div class="col-12 fs-5 fw-bold " id="modalTitle">
+                    </div>
+                    <div class="col-12 mb-4 fs-5 fw-bold mt-3" id="modalPrice"></div>
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 mt-4">
+                    <div class="col-12 .fs-6 badge bg-secondary text-wrap ">
+                      全館滿$599免運</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="col">
+                      <label for="quantity" class="me-2 text-secondary fs-6">購買數量</label>
+                      <form class="d-flex align-items-center" id="purchaseForm">
+
+                        <div class="d-flex align-items-center">
+                          <button type="button" onclick="decreaseQuantity()"
+                            class="me-2 btn btn-outline-dark">-</button>
+                          <input id="quantity" name="quantity" min="1" value="1" class="form-control">
+                          <button type="button" onclick="increaseQuantity()"
+                            class="ms-2 btn btn-outline-dark">+</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" id="addToCartBtn" class="btn btn-dark">加入購物車</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 03 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <img id="imgDog01" src="img/advertise01.png" class="img-fluid" />
+                </div>
+                <div class="col-md-6 ms-auto">
+                  <div class="row mt-2">
+                    <div class="col-12 fs-5 fw-bold " id="modalTitle">
+                    </div>
+                    <div class="col-12 mb-4 fs-5 fw-bold mt-3" id="modalPrice"></div>
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 mt-4">
+                    <div class="col-12 .fs-6 badge bg-secondary text-wrap ">
+                      全館滿$599免運</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="col">
+                      <label for="quantity" class="me-2 text-secondary fs-6">購買數量</label>
+                      <form class="d-flex align-items-center" id="purchaseForm">
+
+                        <div class="d-flex align-items-center">
+                          <button type="button" onclick="decreaseQuantity()"
+                            class="me-2 btn btn-outline-dark">-</button>
+                          <input id="quantity" name="quantity" min="1" value="1" class="form-control">
+                          <button type="button" onclick="increaseQuantity()"
+                            class="ms-2 btn btn-outline-dark">+</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" id="addToCartBtn" class="btn btn-dark">加入購物車</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 04 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <img id="imgDog01" src="img/advertise01.png" class="img-fluid" />
+                </div>
+                <div class="col-md-6 ms-auto">
+                  <div class="row mt-2">
+                    <div class="col-12 fs-5 fw-bold " id="modalTitle">
+                    </div>
+                    <div class="col-12 mb-4 fs-5 fw-bold mt-3" id="modalPrice"></div>
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 mt-4">
+                    <div class="col-12 .fs-6 badge bg-secondary text-wrap ">
+                      全館滿$599免運</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="col">
+                      <label for="quantity" class="me-2 text-secondary fs-6">購買數量</label>
+                      <form class="d-flex align-items-center" id="purchaseForm">
+
+                        <div class="d-flex align-items-center">
+                          <button type="button" onclick="decreaseQuantity()"
+                            class="me-2 btn btn-outline-dark">-</button>
+                          <input id="quantity" name="quantity" min="1" value="1" class="form-control">
+                          <button type="button" onclick="increaseQuantity()"
+                            class="ms-2 btn btn-outline-dark">+</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" id="addToCartBtn" class="btn btn-dark">加入購物車</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 新品搶先看的加入購物車視窗選項01-04 結束-->
+    <!-- 新品搶先看 -->
+    <div class="row row-cols-1 row-cols-md-4 g-3 " data-aos="fade-up">
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm p-2 mb-1  bg-body rounded">
+          <img src="img/new01.png" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column">
+            <div class="flex-grow-1">
+              <p class="card-title" style="color: gray;">陪心寵糧泌尿道紓壓保健</p>
+              <p class="card-text"><b>NT$450</b></p>
+            </div>
+            <!-- 立即購買按鈕 -->
+            <button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              立即購買
+            </button>
+
+            <!-- 加入購物車視窗選項 -->
+
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card h-100 border-0 shadow-sm p-2 mb-1  bg-body rounded">
+          <img src="img/new02.png" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column">
+            <div class="flex-grow-1">
+              <p class="card-title" style="color: gray;">汪喵星球體態管理益生菌</p>
+              <p class="card-text"><b>NT$650</b></p>
+            </div>
+            <!-- 立即購買按鈕 -->
+            <button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              立即購買
+            </button>
+
+            <!-- 加入購物車視窗選項 -->
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm p-2 mb-1  bg-body rounded">
+          <img src="img/new03.png" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column">
+            <div class="flex-grow-1">
+              <p class="card-title" style="color: gray;">木入森犬寶變不臭益生菌</p>
+              <p class="card-text"><b>NT$550</b></p>
+            </div>
+            <!-- 立即購買按鈕 -->
+            <button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              立即購買
+            </button>
+
+            <!-- 加入購物車視窗選項 -->
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm p-2 mb-1  bg-body rounded">
+          <img src="img/new04.png" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column">
+            <div class="flex-grow-1">
+              <p class="card-title" style="color: gray;">毛孩時代心臟專科保健粉</p>
+              <p class="card-text"><b>NT$720</b></p>
+            </div>
+            <!-- 立即購買按鈕 -->
+            <button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              立即購買
+            </button>
+
+            <!-- 加入購物車視窗選項 -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- container -->
+  </div>
+  <!-- 圖片輪播 -->
+  <div id="carouselExampleIndicators02" class="carousel slide carousel-fade mt-5 mb-5" data-bs-ride="carousel"
+    data-aos="fade-up">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators02" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators02" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators02" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators02" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators02" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="img/disney01.png" class="d-block img-fluid w-100" alt="disney01">
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="img/disney02.png" class="d-block img-fluid w-100" alt="disney02">
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="img/disney03.png" class="d-block img-fluid w-100" alt="disney03">
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="img/disney04.png" class="d-block img-fluid w-100" alt="disney04">
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="img/disney05.png" class="d-block img-fluid w-100" alt="disney05">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators02"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators02"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- 熱銷推薦img -->
+  <div class="container">
+    <div class="row mt-5 mb-5" data-aos="fade-up">
+      <div class="col align-self-center ">
+        <img src="img/title02.png" class="img-fluid mx-auto d-block w-75" alt="title04">
+      </div>
+    </div>
+    <!-- 熱銷推薦的加入購物車視窗選項01-04 -->
+    <!-- 01 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <img id="imgDog01" src="img/advertise01.png" class="img-fluid" />
+                </div>
+                <div class="col-md-6 ms-auto">
+                  <div class="row mt-2">
+                    <div class="col-12 fs-5 fw-bold " id="modalTitle">
+                    </div>
+                    <div class="col-12 mb-4 fs-5 fw-bold mt-3" id="modalPrice"></div>
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 mt-4">
+                    <div class="col-12 .fs-6 badge bg-secondary text-wrap ">
+                      全館滿$599免運</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="col">
+                      <label for="quantity" class="me-2 text-secondary fs-6">購買數量</label>
+                      <form class="d-flex align-items-center" id="purchaseForm">
+
+                        <div class="d-flex align-items-center">
+                          <button type="button" onclick="decreaseQuantity()"
+                            class="me-2 btn btn-outline-dark">-</button>
+                          <input id="quantity" name="quantity" min="1" value="1" class="form-control">
+                          <button type="button" onclick="increaseQuantity()"
+                            class="ms-2 btn btn-outline-dark">+</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" id="addToCartBtn" class="btn btn-dark">加入購物車</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 02 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <img id="imgDog01" src="img/advertise01.png" class="img-fluid" />
+                </div>
+                <div class="col-md-6 ms-auto">
+                  <div class="row mt-2">
+                    <div class="col-12 fs-5 fw-bold " id="modalTitle">
+                    </div>
+                    <div class="col-12 mb-4 fs-5 fw-bold mt-3" id="modalPrice"></div>
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 mt-4">
+                    <div class="col-12 .fs-6 badge bg-secondary text-wrap ">
+                      全館滿$599免運</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="col">
+                      <label for="quantity" class="me-2 text-secondary fs-6">購買數量</label>
+                      <form class="d-flex align-items-center" id="purchaseForm">
+
+                        <div class="d-flex align-items-center">
+                          <button type="button" onclick="decreaseQuantity()"
+                            class="me-2 btn btn-outline-dark">-</button>
+                          <input id="quantity" name="quantity" min="1" value="1" class="form-control">
+                          <button type="button" onclick="increaseQuantity()"
+                            class="ms-2 btn btn-outline-dark">+</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" id="addToCartBtn" class="btn btn-dark">加入購物車</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 03 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <img id="imgDog01" src="img/advertise01.png" class="img-fluid" />
+                </div>
+                <div class="col-md-6 ms-auto">
+                  <div class="row mt-2">
+                    <div class="col-12 fs-5 fw-bold " id="modalTitle">
+                    </div>
+                    <div class="col-12 mb-4 fs-5 fw-bold mt-3" id="modalPrice"></div>
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 mt-4">
+                    <div class="col-12 .fs-6 badge bg-secondary text-wrap ">
+                      全館滿$599免運</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="col">
+                      <label for="quantity" class="me-2 text-secondary fs-6">購買數量</label>
+                      <form class="d-flex align-items-center" id="purchaseForm">
+
+                        <div class="d-flex align-items-center">
+                          <button type="button" onclick="decreaseQuantity()"
+                            class="me-2 btn btn-outline-dark">-</button>
+                          <input id="quantity" name="quantity" min="1" value="1" class="form-control">
+                          <button type="button" onclick="increaseQuantity()"
+                            class="ms-2 btn btn-outline-dark">+</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" id="addToCartBtn" class="btn btn-dark">加入購物車</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 04 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <img id="imgDog01" src="img/advertise01.png" class="img-fluid" />
+                </div>
+                <div class="col-md-6 ms-auto">
+                  <div class="row mt-2">
+                    <div class="col-12 fs-5 fw-bold " id="modalTitle">
+                    </div>
+                    <div class="col-12 mb-4 fs-5 fw-bold mt-3" id="modalPrice"></div>
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 mt-4">
+                    <div class="col-12 .fs-6 badge bg-secondary text-wrap ">
+                      全館滿$599免運</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="col">
+                      <label for="quantity" class="me-2 text-secondary fs-6">購買數量</label>
+                      <form class="d-flex align-items-center" id="purchaseForm">
+
+                        <div class="d-flex align-items-center">
+                          <button type="button" onclick="decreaseQuantity()"
+                            class="me-2 btn btn-outline-dark">-</button>
+                          <input id="quantity" name="quantity" min="1" value="1" class="form-control">
+                          <button type="button" onclick="increaseQuantity()"
+                            class="ms-2 btn btn-outline-dark">+</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" id="addToCartBtn" class="btn btn-dark">加入購物車</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 熱銷推薦的加入購物車視窗選項01-04結束 -->
+    <!-- 熱銷推薦 -->
+    <div class="container" data-aos="fade-up">
+      <div class="row row-cols-1 row-cols-md-4 g-3">
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm p-2 mb-1  bg-body rounded">
+            <img class="card-img-top" src="img/hot01.png" />
+            <div class="card-body d-flex flex-column">
+              <div class="flex-grow-1">
+                <p class="card-title" style="color: gray;">汪喵星球腸胃益生菌</p>
+                <p class="card-text"><b>NT$650</b></p>
+              </div>
+              <!-- 立即購買按鈕 -->
+              <button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                立即購買
+              </button>
+
+              <!-- 加入購物車視窗選項 -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm p-2 mb-1  bg-body rounded">
+            <img class="card-img-top" src="img/hot02.png" />
+            <div class="card-body d-flex flex-column">
+              <div class="flex-grow-1">
+                <p class="card-title" style="color: gray;">法國法典抗焦慮口服液</p>
+                <p class="card-text"><b>NT$650</b></p>
+              </div>
+              <!-- 立即購買按鈕 -->
+              <button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                立即購買
+              </button>
+
+              <!-- 加入購物車視窗選項 -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm p-2 mb-1  bg-body rounded">
+            <img class="card-img-top" src="img/hot03.png" />
+            <div class="card-body d-flex flex-column">
+              <div class="flex-grow-1">
+                <p class="card-title" style="color: gray;">自然食綜合完整型營養粉</p>
+                <p class="card-text"><b>NT$810</b></p>
+              </div>
+              <!-- 立即購買按鈕 -->
+              <button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                立即購買
+              </button>
+
+              <!-- 加入購物車視窗選項 -->
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm p-2 mb-1  bg-body rounded">
+            <img class="card-img-top" src="img/hot04.png" />
+            <div class="card-body d-flex flex-column">
+              <div class="flex-grow-1">
+                <p class="card-title" style="color: gray;">陪心寵糧眼睛保健葉黃素</p>
+                <p class="card-text"><b>NT$420</b></p>
+              </div>
+              <!-- 立即購買按鈕 -->
+              <button type="button" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                立即購買
+              </button>
+
+              <!-- 加入購物車視窗選項 -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 好評推薦img -->
+    <div class="row mt-5 mb-5" data-aos="fade-up">
+      <div class="col align-self-center ">
+        <img src="img/title03.png" class="img-fluid mx-auto d-block w-75" alt="title04">
+      </div>
+    </div>
+    <!-- 好評推薦 -->
+    <div class="row row-cols-2 row-cols-md-4 g-3" data-aos="fade-up">
+      <div class="col">
+        <div class="card h-100 border-0 card ">
+          <img class="rounded-circle shadow p-3 mb-5 bg-body rounded" src="img/good01.png" />
+          <div class="card-body">
+            <h3 class="card-title text-center"><b>迪多</b></h3>
+            <p class="card-text">
+              其實本來也不懂要幫迪多買什麼保健食品，想說迪多還是小噴油呀～保健食品還不需要吧？只會弄個基本的預防針、狂犬、心絲蟲等等⋯這次使用到『AMILA』的產品才發現保健食品是不容忽視的！</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 border-0 card ">
+          <img class="rounded-circle shadow p-3 mb-5 bg-body rounded" src="img/good02.png" />
+          <div class="card-body">
+            <h3 class="card-title text-center"><b>亞克路</b></h3>
+            <p class="card-text">這陣子天氣轉涼，亞克路每天的便便有成形欸！以往都會軟便個好幾天，麻麻回想一下，應該是亞克路從 9 月底開始吃益生菌的關係~</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 border-0 card ">
+          <img class="rounded-circle shadow p-3 mb-5 bg-body rounded" src="img/good03.png" />
+          <div class="card-body">
+            <h3 class="card-title text-center"><b>吉吉</b></h3>
+            <p class="card-text">吉吉試吃亮毛護膚鱉蛋粉的這幾天下來便便都很正常，皮膚狀況也維持的不錯!是狗狗保護皮膚的好產品喔~</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0 card ">
+          <img class="rounded-circle shadow p-3 mb-5 bg-body rounded" src="img/good04.png" />
+          <div class="card-body">
+            <h3 class="card-title text-center"><b>木靈</b></h3>
+            <p class="card-text">
+              當毛孩到達一定的年紀時，多少都會出現眼部的毛病。特別在老齡犬貓的眼睛出現輕度混濁前就要開始注補充眼睛保養的營養素，當眼睛問題出現病變之後經常是不可逆的，這種時候保健食品完全是木靈的救星!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 嚴選品牌img -->
+    <div class="row mt-5 mb-5" data-aos="fade-up">
+      <div class="col align-self-center ">
+        <img src="img/title04.png" class="img-fluid mx-auto d-block w-75" alt="title04">
+      </div>
+    </div>
+
+    <!-- 嚴選品牌 -->
+    <div class="row row-cols-3 row-cols-md-6 g-3" data-aos="fade-up">
+      <div class="col">
+        <div class="card h-100 border-0 card ">
+          <img class="card-img-top" src="img/brand01.png" />
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 border-0 card ">
+          <img class="card-img-top" src="img/brand02.png" />
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 border-0 card ">
+          <img class="card-img-top" src="img/brand03.png" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0 card ">
+          <img class="card-img-top" src="img/brand04.png" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0 card ">
+          <img class="card-img-top" src="img/brand05.png" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0 card ">
+          <img class="card-img-top" src="img/brand06.png" />
+        </div>
+      </div>
+    </div>
+    <!-- 品牌口號img -->
+
+    <div class="row mt-5 mb-5" data-aos="fade-up">
+      <div class="col align-self-center ">
+        <img src="img/title05.png" class="img-fluid mx-auto d-block w-75" alt="title04">
+      </div>
+    </div>
+    <!-- 購物須知 -->
+    <div class="card-group row row-cols-2 row-cols-md-4 g-2 " data-aos="fade-up">
+      <div class="card mb-3 border-0">
+        <div class="row align-items-center">
+          <div class="col-md-6 border-end">
+            <img src="img/Notice01.png" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h3 class="card-title" style="color:rgb(74, 56, 40)"><b>滿千免運</b></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 border-0">
+        <div class="row align-items-center">
+          <div class="col-md-6 border-end">
+            <img src="img/Notice02.png" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h3 class="card-title" style="color:rgb(74, 56, 40)"><b>品質保證</b></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 border-0">
+        <div class="row align-items-center">
+          <div class="col-md-6 border-end">
+            <img src="img/Notice03.png" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h3 class="card-title" style="color:rgb(74, 56, 40)"><b>快速配送</b></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 border-0">
+        <div class="row align-items-center">
+          <div class="col-md-6 border-end">
+            <img src="img/Notice04.png" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-6 ">
+            <div class="card-body ">
+              <h3 class="card-title" style="color:rgb(74, 56, 40)"><b>線上客服</b></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- container end style="background-image: url('img/footer.png');" -->
+
+  <!-- 我的頁尾開始 -->
+  <div class="b-example-divider"></div>
+  <div class="mt-5 p-4 text-white text-center " style="background-image: url('img/footer.png');" data-bs-theme="dark">
+
+    <div class="container  mt-5">
+      <footer class="py-5 mt-5">
+        <div class="row  mt-5 ">
+
+          <div class="col-6  mb-3">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 text-start">
+                <h5><b>聯絡我們</b></h5>
+              </li>
+              <br>
+              <li class="nav-item mb-2 text-start">
+                <h6>營業時間｜周一至周五 09：00-16：30</h6>
+              </li>
+              <li class="nav-item mb-2 text-start">
+                <h6>地址｜臺中市南屯區公益路二段51號(國泰公益大樓)</h6>
+              </li>
+              <li class="nav-item mb-2 text-start">
+                <h6>客服信箱｜amila@gmail.com</h6>
+              </li>
+              <li class="nav-item mb-2 text-start">
+                <h6>客服電話｜(04)2242-1717 #263</h6>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="col-md-6 ">
+            <form>
+              <div class="text-start">
+                <h5><b>訂閱電子報</b></h5>
+              </div>
+              <div class="input-group mb-3">
+                <label for="newsletter1" class="visually-hidden">訂閱電子報信箱</label>
+                <input type="text" class="form-control rounded-start" placeholder="訂閱電子報信箱"
+                  aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-light " type="button" id="button-addon2">訂閱</button>
+              </div>
+              <div>
+                <ul class="list-unstyled d-flex">
+                  <li class="ms-0"><img src="img/JCB.png" class="img-fluid img-thumbnail" alt="..."></a></li>
+                  <li class="ms-0"><img src="img/VISA.png" class="img-fluid img-thumbnail" alt="..."></a></li>
+                  <li class="ms-0"><img src="img/MasterCard.png" class="img-fluid img-thumbnail" alt="..."></a></li>
+                </ul>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2023 阿米拉工作室股份有限公司</p>
+        </div>
+      </footer>
+
+    </div>
+    <!-- 我的頁尾結束 -->
+</body>
+<script src="js/aos.js"></script>
+<script src="js/myjs.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</html>

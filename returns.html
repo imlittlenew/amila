@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="img/logo.png" rel="shortcut icon" />
+  <title>AMILA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mycss.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <button onclick="scrollToTop()" id="backToTopBtn" title="回到頂部"></button>
+<!-- 優惠訊息 -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary p-2" data-bs-theme="dark">
+  <div class="container text-center">
+    <div class="row mx-auto">
+      <div class="col-12 ">
+        <span class="navbar-brand mb-0 fs-6 text-light"><b>歡慶阿米拉品牌月！全館 $599
+            享免運！</b></span>
+
+      </div>
+    </div>
+    <!-- Content here -->
+  </div>
+</nav>
+<!-- 導覽列 -->
+<nav class="navbar navbar-expand-lg navbar sticky-top shadow mt-0 mb-0  bg-body" style="background-color: white;">
+  <div class="container">
+    <a class="navbar-brand fs-5 fw-bold mt-1" href="index.html">
+      <img src="img/logo.png" alt="Logo" width="45" height="36" class="d-inline-block align-text-center ">AMILA</a>
+    <button class="navbar-toggler" style="padding: 0 10px 0 10px;" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link  fw-bold fs-5" href="all_products.html">所有商品</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold fs-5" href="knowledgepage01.html">毛孩保健知識</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold fs-5" aria-current="page" href="aboutamila.html">關於阿米拉</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle fw-bold fs-5" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            常見問題
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item  fs-5" href="pq.html">商品問題</a></li>
+            <li><a class="dropdown-item  fs-5" href="returns.html">退換貨須知</a></li>
+            <li><a class="dropdown-item  fs-5" href="delivery.html">運送政策</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <a href="#" class="btn text-nowrap" onclick="toggleSearch()">
+            <img src="img/search.png" class="d-block img-fluid" alt="search">
+        </a>
+        <div class="search-overlay" id="searchOverlay"onclick="searchProducts()">
+            <div class="search-form search-form--full-screen" id="searchForm">
+                <div class="search-container">
+                    <img src="img/bigsearch.png" class="search-icon" alt="search">
+                    <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+                </div>
+            </div>
+        </div>
+        
+        <a href="cart.html" class="btn text-nowrap" id="cartIconWrapper">
+            <img src="img/cart.png" class="d-block img-fluid" alt="cart">
+            <span class="badge bg-dark rounded-pill cart-badge-nav" id="cartBadge"></span>
+        </a>
+        <a href="user.html" class="btn text-nowrap"><img src="img/user.png" class="d-block img-fluid" alt="user"></a>
+    </form>
+      
+    </div>
+</nav>
+
+  <!-- Breadcrumb -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html" class="link-dark">首頁</a></li>
+            <li class="breadcrumb-item"><a href="pq.html" class="link-dark">常見問題</a></li>
+            <li class="breadcrumb-item active" aria-current="page">退換貨須知</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!-- 品牌清單 -->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group list-group-flush">
+          <!-- list-group-item-dark 選到這個頁面改變顏色 -->
+          <a href="pq.html" class="list-group-item list-group-item-action text-start">訂單問題</a>
+          <a href="returns.html"
+            class="list-group-item list-group-item-dark list-group-item-action text-start">退換貨須知</a>
+          <a href="delivery.html" class="list-group-item list-group-item-action text-start">運送政策</a>
+        </div>
+      </div>
+
+
+      <div class="col-md-9">
+        <!-- returns開始 -->
+        <div class="row row-cols-1 row-cols-md-1 g-3 ">
+          <div class="col">
+            <h5>
+              <a class="list-group-item list-group-item-action text-start" data-bs-toggle="collapse"
+                href="#multiCollapseExample1" role="button" aria-expanded="false"
+                aria-controls="multiCollapseExample1">鑑賞期商品不如預期如何辦理退貨呢？</a>
+            </h5>
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body no-border">
+                <h6>
+                  若需退貨服務，請協助提供以下資訊並與客服聯繫以加快處理流程
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h5>
+              <a class="list-group-item list-group-item-action text-start" data-bs-toggle="collapse"
+                href="#multiCollapseExample2" role="button" aria-expanded="false"
+                aria-controls="multiCollapseExample2">商品欲申請退貨原因</a>
+            </h5>
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body no-border">
+                </h6>
+                商品包裝完整未拆封使用之照片
+                鑑賞期非試用期，若商品拆封或使用後造成無法轉賣(包裝配件損壞不完整有使用痕跡等情況)
+                如有瑕疵情況請事先提出，等物品收回檢查時發現視同人為。
+                詳閱退換貨政策
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h5>
+              <a class="list-group-item list-group-item-action text-start" data-bs-toggle="collapse"
+                href="#multiCollapseExample3" role="button" aria-expanded="false"
+                aria-controls="multiCollapseExample3">我收到的商品有缺件／瑕疵問題</a>
+            </h5>
+            <div class="collapse multi-collapse" id="multiCollapseExample3">
+              <div class="card card-body no-border">
+                <h6>
+                  可直接聯繫客服並留下以下資訊，客服會於回覆時間盡快回覆您，<br>
+
+                  訂單編號
+                  對問題的描述和一些該商品清晰的圖片及影片 (如商品缺件可提供開箱影片)
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h5>
+              <a class="list-group-item list-group-item-action text-start" data-bs-toggle="collapse"
+                href="#multiCollapseExample4" role="button" aria-expanded="false"
+                aria-controls="multiCollapseExample4">我尚未收到退款?</a>
+            </h5>
+            <div class="collapse multi-collapse" id="multiCollapseExample4">
+              <div class="card card-body no-border">
+                <h6>
+                  請先確認您當初是帳戶退款，還是信用卡刷退<br>
+                  【帳戶退款】客服收到退貨後，款項會於7-14個工作天匯至您指定的戶頭<br>
+                  【信用卡刷退】客服收到退貨後，款項將會於7-14個工作天內完成退刷，再請您留意本期或下期帳單及相關通知信件
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h5>
+              <a class="list-group-item list-group-item-action text-start" data-bs-toggle="collapse"
+                href="#multiCollapseExample5" role="button" aria-expanded="false"
+                aria-controls="multiCollapseExample5">退換貨政策</a>
+            </h5>
+            <div class="collapse multi-collapse" id="multiCollapseExample5">
+              <div class="card card-body no-border">
+                <pre><h6>
+商品退換貨條件
+
+欲退貨商品，請注意須符合以下條件才能辦理退貨。
+
+(1) 全新商品 : 鑑賞期非試用期，商品經使用將無法退貨，商品收到後請先確認外觀是否為瑕疵，經拆裝使用後怒無法辦理退貨。
+
+(2) 完整包裝 : 商品退貨時必須回復原狀，亦即必須回復至收到商品時的原始狀態 ( 包含商品、配件、贈品、發票、原廠包裝
+              ( 紙、盒、袋 ) 、內附文件或資料的完整性等 ) ，若商品被認定為已逾越檢查商品之必要程度，將影響退貨
+              權利的行使權或需負擔因損壞產生之費用。
+
+(3) 鑑賞期內 : 取貨後的七天內。 ( 依消保法規定，實體店面購買取貨不適用七天鑑賞期 )
+
+(4) 非商品瑕疵或賣家出貨錯誤等因賣家疏失導致情況下，如消費者有退換貨需求需自行負擔退換運費。 ( 請勿使用到付包裹寄
+    送，會直接拒收哦！ )
+
+(5) 為避免接觸性傳染疾病，請購買前先考量好自身毛小孩使用需求，以免造成日後買賣糾紛，如您的商品已經拆封使用，恕無法
+    退換貨。
+
+(6) 如當初訂單有達免運資格，在退換部分商品之後訂單金額未達當初免運金額門檻，仍將於退貨退款時扣除原訂單之物流費80元
+    。 ( 全退者除外 )
+
+(7) 若原先符合滿額贈活動，後因退貨而未達活動標準時，也須將滿額贈品一併退回。
+
+ 
+
+無法退貨情形
+
+如有以下情形者怒無法辦理退貨，若寄回發現商品未有瑕疵或不滿足退貨條件，消費者必須支付運送過程所產生的相關費用。
+
+(1) 超過七天鑑賞期
+
+(2) 非全新商品 : 鑑賞期非適用期，若商品使用後造成無法轉賣，怒不提供退換貨。
+
+(3) 非完整包裝
+
+(4) 活動贈品未完整退回 
+
+(5) 螢幕色差、極小的污點等，在國際驗貨標準皆是屬於可接受的範圍，並不屬於瑕疵 
+
+(6) 商品因個人不當使用拆裝等人為因素造成之故障、損毀、磨損、擦傷、刮傷、髒污、包裝破損不完整或是配件不齊等者。
+
+(7) 接觸型商品 : 鑑賞期非試用期，商品經使用將無法退換貨，商品收到後請先確認外觀是否為瑕疵，經拆裝使用後怒無法辦
+    理退貨。屬於個人衛生用品，已拆封使用無法接受退換貨。 ( 例如 : 寵物床墊、寵物衣物、寵物推車、項圈等商品 )
+
+(8) 已拆封商品 : 基於個人衛生疑慮與保障顧客權益，商品經過拆封後無法因不喜歡、等等因素而辦理退換貨，除非拆裝時商
+    品內容有瑕疵，否則一旦開封恕不提供退貨。
+
+(9) 毀損、短少商品 : 商品已經經過消費者加工、毀損或者是配件短少等商品。
+
+ 
+
+P.S. 若有收到上述無法退貨之商品，將於計算退貨退款時扣除該商品金額。或因最終商品已非完整無法退貨，mao 會將貨品寄
+還於您，而此趟寄回給您的運費 ( 貨到付款運費130元起 ) 將由您自行負擔，因此退回商品時請務必多加留意商品的完整性。
+
+ 
+
+退款時間說明
+
+◎ 信用卡付款
+
+(1) 取消訂單 : 將於收到您的取消訂單需求後的7-14個工作天為您完成退刷，請留意本期或下期帳單及相關EMAIL通知信件。 
+               ( 實際入帳時間要依銀行作業流程 )
+
+(2) 申請退貨 : 將於收到商品確認可辦理退款後的7-14個工作天內為您完成退刷，請留意本期或下期帳單及相關EMAIL通知信件。
+               ( 實際入帳時間要依銀行作業流程 )
+
+若經由超商退貨便退貨，整體退貨時間約需14-21個工作天，還請您耐心等候。
+
+ 
+
+◎ 超商取貨付款、ATM付款
+
+(1) 申請退貨 : 將於收到商品確認可辦理退款後的7-14個工作天內，將款項退回至您的指定的帳戶內。
+
+若經由超商退貨便退貨，整體退貨時間約需14-21個工作天，還請您耐心等候。
+
+非商品瑕疵或賣家出貨錯誤等因賣家疏失導致情況下，如需使用退貨變將於退款款項扣除75元退貨運費。
+                </h6></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- returns結束 -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 我的頁尾開始 -->
+  <div class="b-example-divider"></div>
+  <div class="mt-5 p-4 text-white text-center " style="background-image: url('img/footer.png');" data-bs-theme="dark">
+
+    <div class="container  mt-5">
+      <footer class="py-5 mt-5">
+        <div class="row  mt-5 ">
+
+          <div class="col-6  mb-3">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 text-start">
+                <h5><b>聯絡我們</b></h5>
+              </li>
+              <br>
+              <li class="nav-item mb-2 text-start">
+                <h6>營業時間｜周一至周五 09：00-16：30</h6>
+              </li>
+              <li class="nav-item mb-2 text-start">
+                <h6>地址｜臺中市南屯區公益路二段51號(國泰公益大樓)</h6>
+              </li>
+              <li class="nav-item mb-2 text-start">
+                <h6>客服信箱｜amila@gmail.com</h6>
+              </li>
+              <li class="nav-item mb-2 text-start">
+                <h6>客服電話｜(04)2242-1717 #263</h6>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="col-md-6 ">
+            <form>
+              <div class="text-start">
+                <h5><b>訂閱電子報</b></h5>
+              </div>
+              <div class="input-group mb-3">
+                <label for="newsletter1" class="visually-hidden">訂閱電子報信箱</label>
+                <input type="text" class="form-control rounded-start" placeholder="訂閱電子報信箱"
+                  aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-light " type="button" id="button-addon2">訂閱</button>
+              </div>
+              <div>
+                <ul class="list-unstyled d-flex">
+                  <li class="ms-0"><img src="img/JCB.png" class="img-fluid img-thumbnail" alt="..."></a></li>
+                  <li class="ms-0"><img src="img/VISA.png" class="img-fluid img-thumbnail" alt="..."></a></li>
+                  <li class="ms-0"><img src="img/MasterCard.png" class="img-fluid img-thumbnail" alt="..."></a></li>
+                </ul>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2023 阿米拉工作室股份有限公司</p>
+        </div>
+      </footer>
+    </div>
+    <!-- 我的頁尾結束 -->
+    <script src="js/aos.js"></script>
+    <script src="js/myjs.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
